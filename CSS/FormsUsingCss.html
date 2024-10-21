@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+           <title>Forms Using CSS</title>
+           <style>
+             body{
+                background-color:sandybrown;
+                font-size: larger;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 400;
+                color: black;
+                text-align:center;
+                
+
+             }
+             form{
+                display:inline-block;
+                text-align:left;
+                margin:10px 10px 10px;
+                border: 2px solid steelblue;
+                padding:20px;
+                border-radius: 10px;
+                background-color:palevioletred;
+             }
+             table{
+                margin:10px 10px 10px;
+             }
+           </style>
+    </head>
+    <body>
+        <form>
+           <h1>College Events Form</h1>
+           <table>
+           <tbody>
+            <tr>
+                <td>Student Name</td>
+                <td><input type="text" name="s_name" id="s_name" placeholder="Student Name"></td>
+             
+            </tr>
+            <br>
+            <tr>
+                <td>Roll Number</td>
+                <td><input type="text" name="r_number" id="r_number" placeholder="Roll No"  </td>
+            </tr>
+            <br>
+            <tr>
+                <td>Department</td>
+                <td><input type="radio" name="depart"  value="CSE">CSE</td>
+                <td><input type="radio" name="depart"  value="IT">IT</td>
+                <td><input type="radio" name="depart"  value="EEE">EEE</td>
+                <td><input type="radio" name="depart"  value="ECE">ECE</td>
+            </tr> 
+            <br>
+            <tr>
+                <td>Events</td>
+                <td><input type="checkbox" name="check1" value="Quiz">Quiz Competition   </td><br>
+                <td><input type="checkbox" name="check2" value="Paper Presentation">Paper Presentation   </td><br>
+                <td><input type="checkbox" name="check3" value="Ice Breaking">Non Technical Event   </td><br>
+                <td><input type="checkbox" name="check4" value="Cook without fire">Fun Games   </td><br>
+            </tr>
+            <br>
+            <tr>
+                <td>
+                    <input type="submit" value="Submit">
+                </td>
+                <td>
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+            
+           </tbody>
+        </table>
+        </form>
+    </body>
+</html>

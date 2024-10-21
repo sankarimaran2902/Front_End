@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Documents</title>
+        <style>
+            .container{
+                display:flex
+            }
+            .para1{
+                background-color: blanchedalmond;
+                flex:2;
+                order:1;
+            }
+            .para2{
+                background-color: aqua;
+                flex:2;
+                order:2;
+            }
+            .para3{
+                background-color:blueviolet;
+                flex:2;
+                order:3;
+            }
+            .outerbox
+            {
+                background-color: aquamarine;
+                display:flex;
+                min-height:600px;
+                flex-wrap:wrap;
+                justify-content: space-evenly;
+                align-items:center;
+            }
+            .box{
+                background-color:blueviolet;
+                width:250px;
+                height:250px;
+                border:2px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outerbox">
+            <div class="box"></div>
+            <div class="box box">
+
+            </div>
+        </div>
+        <div class="container">
+            <p class="para1">BE KIND AND LOVE YOUR INNER PEACE...</p>
+            <p class="para2">DON'T TAKE LIFE AS SERIOUS, JUST TAKE IT AS GAME. ACCEPT THE CHALLENGES AND MOVES TO THE NEXT LEVEL...</p>
+            <p class="para3">DON'T BLAME OTHERS FOR YOUR MISTAKE,ACCEPT IT AND LEARN LESSON FROM THAT...</p>
+        </div>
+    </body>
+</html>
