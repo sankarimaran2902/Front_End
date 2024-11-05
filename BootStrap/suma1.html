@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Form</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Medical Information Form</h2>
+        
+        <!-- Patient Information -->
+        <form>
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">Patient Information</div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="patientName">Full Name</label>
+                        <input type="text" class="form-control" id="patientName" placeholder="Enter full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" class="form-control" id="dob">
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select class="form-control" id="gender">
+                            <option value="">Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Contact Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter contact number">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea class="form-control" id="address" rows="3" placeholder="Enter address"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Medical History -->
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">Medical History</div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="allergies">Allergies</label>
+                        <input type="text" class="form-control" id="allergies" placeholder="Enter known allergies">
+                    </div>
+                    <div class="form-group">
+                        <label for="currentMedications">Current Medications</label>
+                        <input type="text" class="form-control" id="currentMedications" placeholder="Enter current medications">
+                    </div>
+                    <div class="form-group">
+                        <label for="pastDiseases">Past Diseases</label>
+                        <textarea class="form-control" id="pastDiseases" rows="3" placeholder="Enter any past diseases or surgeries"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Consent -->
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">Consent</div>
+                <div class="card-body">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="consentCheckbox">
+                        <label class="form-check-label" for="consentCheckbox">
+                            I consent to the hospital storing and processing my medical information.
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-success btn-block">Submit</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
