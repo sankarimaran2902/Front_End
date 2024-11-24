@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Pop Function</title>
+</head>
+<body>
+    <script>
+        let values=['Sankari','Shyam',53.5,'S','D',52.4];
+        values.pop()
+        document.writeln(values);
+    
+
+        let names=new Array();
+        names.push("Happy")
+        names.push("Calm")
+        names.push("Desire")
+        names.push("Sorrow")
+        document.writeln(names)
+
+        let output=(temp)=>
+        {
+            alert(temp)
+        }
+        names.map(output)
+        names.pop()
+        document.writeln("<b>" +names +"<b>")
+        let one=prompt("Tell us Delete position")
+        names=names.filter((temp,pos)=>{
+            return temp!==names[one];   //sathish!==temp[1]
+        })
+        names.map((temp)=>
+    {
+        document.write(temp)
+    })
+
+    
+    </script>
+</body>
+</html>

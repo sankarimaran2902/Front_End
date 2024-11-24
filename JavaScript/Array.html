@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays in Javascript</title>
+</head>
+<body>
+    <script>
+        var beta=['preethi','sivasankari',21,'Shyam'];
+        document.write("Array Values: "+beta);
+        // alert(beta);
+
+        //using fat arrow function array instantiation
+        let alpha=new Array();
+        alpha.push('Preethi');
+        alpha.push('Sivasankari');
+        alpha.push('Sakthi');
+        alpha.push('Muthu');
+
+        let print=(data)=>
+    {
+        alert(data);
+    }
+    alpha.map(print);
+    </script>
+</body>
+</html>

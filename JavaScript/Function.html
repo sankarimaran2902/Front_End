@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <script>
+        function display()
+        {
+            let cosmo=document.getElementsByTagName('li')[4];
+            cosmo.style.color='green'
+            cosmo.style.borderStyle='double';
+
+            var alpha=document.getElementById('process');
+            alpha.style.color='violet';
+            alpha.style.textTransform='uppercase';
+        }
+    </script>
+</head>
+<body>
+    <h1>Function Calling</h1>
+    <ol onclick="display()">Favorite Places
+       <li>Ooty</li>
+       <li>Manali</li>
+       <li>Mannargudi</li>
+       <li>Needamangalam</li>
+       <li id="process">Rayapuram</li>
+       <li>Chennai</li>
+       <li>Coimbatore</li>
+    </ol>
+</body>
+</html>
